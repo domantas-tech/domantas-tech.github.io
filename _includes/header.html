@@ -1,0 +1,35 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="{{ '/' | relative_url }}" aria-label="{{ site.name }}, home">
+      {{ site.name }}<span class="logo-cursor" aria-hidden="true">_</span>
+    </a>
+
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul>
+        {%- for item in site.data.navigation %}
+          {%- assign item_url = item.url | relative_url -%}
+          {%- assign current = false -%}
+          {%- if item.url == "/" -%}
+            {%- if page.url == "/" or page.url == "/index.html" -%}{%- assign current = true -%}{%- endif -%}
+          {%- elsif item.url contains "#" -%}
+            {%- comment -%} in-page anchors are never "current" {%- endcomment -%}
+          {%- elsif page.url contains item.url -%}
+            {%- assign current = true -%}
+          {%- endif %}
+        <li><a href="{{ item_url }}"{% if current %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="icon-moon">{% include icon.html name="moon" %}</span>
+        <span class="icon-sun">{% include icon.html name="sun" %}</span>
+      </button>
+      <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="icon-menu">{% include icon.html name="menu" %}</span>
+        <span class="icon-close">{% include icon.html name="close" %}</span>
+      </button>
+    </div>
+  </div>
+</header>

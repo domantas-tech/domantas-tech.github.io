@@ -1,0 +1,17 @@
+{%- comment -%} Big-number counters. Years come from `career_start_year` in _config.yml; the rest are counted. {%- endcomment -%}
+{%- assign this_year = site.time | date: "%Y" | plus: 0 -%}
+{%- assign years = this_year | minus: site.career_start_year -%}
+<dl class="stats">
+  <div class="stat">
+    <dt>years experience</dt>
+    <dd>{{ years }}</dd>
+  </div>
+  <div class="stat">
+    <dt>projects shipped</dt>
+    <dd>{{ site.data.projects.size }}</dd>
+  </div>
+  <div class="stat">
+    <dt>posts written</dt>
+    <dd>{{ site.posts.size }}</dd>
+  </div>
+</dl>

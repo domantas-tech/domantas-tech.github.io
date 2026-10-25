@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Signal Board placeholder screenshot">
+  <rect width="800" height="500" fill="#0F2724"/>
+  <rect x="24" y="24" width="752" height="476" rx="14" fill="#11211E" stroke="#24504A"/>
+  <circle cx="48" cy="48" r="5" fill="#F2A097"/><circle cx="66" cy="48" r="5" fill="#F2C46B"/><circle cx="84" cy="48" r="5" fill="#4FD1B5"/>
+  <text x="400.0" y="53" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#9BB2AC">Signal Board</text>
+  <line x1="24" y1="72" x2="776" y2="72" stroke="#24504A"/>
+  <rect x="48" y="96" width="704" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="60" y="108" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="81" y="124" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#7FE0A8">5/5</text>
+  <rect x="116" y="109" width="317" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="116" y="123" width="211" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="48" y="154" width="704" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="60" y="166" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="81" y="182" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#7FE0A8">5/5</text>
+  <rect x="116" y="167" width="317" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="116" y="181" width="211" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="48" y="212" width="704" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="60" y="224" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="81" y="240" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#4FD1B5">4/5</text>
+  <rect x="116" y="225" width="317" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="116" y="239" width="211" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="48" y="270" width="704" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="60" y="282" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="81" y="298" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#7FE0A8">5/5</text>
+  <rect x="116" y="283" width="317" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="116" y="297" width="211" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="48" y="328" width="704" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="60" y="340" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="81" y="356" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F2C46B">3/5</text>
+  <rect x="116" y="341" width="317" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="116" y="355" width="211" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="48" y="386" width="704" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="60" y="398" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="81" y="414" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#7FE0A8">5/5</text>
+  <rect x="116" y="399" width="317" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="116" y="413" width="211" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+</svg>

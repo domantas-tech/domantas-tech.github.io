@@ -1,0 +1,48 @@
+/* ==========================================================================
+   syntax.css: code highlighting for Rouge (Jekyll's built-in highlighter).
+   Token colors follow the light/dark theme via the variables below.
+   ========================================================================== */
+:root {
+  --hl-comment: #5F7470;
+  --hl-keyword: #8A2F6B;
+  --hl-string: #0F6B41;
+  --hl-number: #9A4A00;
+  --hl-func: #1E5AA8;
+  --hl-type: #0A6A5A;
+  --hl-builtin: #6A3FB0;
+  --hl-attr: #8A5500;
+  --hl-del-bg: #FBE4E1;
+  --hl-ins-bg: #DDF3E6;
+}
+@media screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --hl-comment: #7F9893; --hl-keyword: #F49AC9; --hl-string: #8BE0A9; --hl-number: #F5B36B;
+    --hl-func: #8FBFFF; --hl-type: #6FD9C4; --hl-builtin: #C6A7FF; --hl-attr: #F2C46B;
+    --hl-del-bg: #3D1C19; --hl-ins-bg: #12382A;
+  }
+}
+@media screen {
+:root[data-theme="dark"] {
+  --hl-comment: #7F9893; --hl-keyword: #F49AC9; --hl-string: #8BE0A9; --hl-number: #F5B36B;
+  --hl-func: #8FBFFF; --hl-type: #6FD9C4; --hl-builtin: #C6A7FF; --hl-attr: #F2C46B;
+  --hl-del-bg: #3D1C19; --hl-ins-bg: #12382A;
+}
+}
+
+.highlight .c, .highlight .c1, .highlight .cm, .highlight .cs, .highlight .cp, .highlight .ch, .highlight .cd { color: var(--hl-comment); font-style: italic; }
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv, .highlight .ow { color: var(--hl-keyword); font-weight: 500; }
+.highlight .kc, .highlight .kt { color: var(--hl-type); }
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se,
+.highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss, .highlight .dl, .highlight .sa { color: var(--hl-string); }
+.highlight .m, .highlight .mi, .highlight .mf, .highlight .mh, .highlight .mo, .highlight .il, .highlight .mb { color: var(--hl-number); }
+.highlight .nf, .highlight .fm, .highlight .nx { color: var(--hl-func); }
+.highlight .nc, .highlight .nn, .highlight .ne, .highlight .nt { color: var(--hl-type); }
+.highlight .nb, .highlight .bp, .highlight .vg, .highlight .vi, .highlight .vc, .highlight .nv { color: var(--hl-builtin); }
+.highlight .na, .highlight .nd, .highlight .no { color: var(--hl-attr); }
+.highlight .o, .highlight .p { color: inherit; }
+.highlight .err { color: inherit; background: none; }
+.highlight .gd { background: var(--hl-del-bg); display: inline-block; width: 100%; }
+.highlight .gi { background: var(--hl-ins-bg); display: inline-block; width: 100%; }
+.highlight .gh, .highlight .gu { color: var(--hl-func); font-weight: 600; }
+.highlight .ge { font-style: italic; }
+.highlight .gs { font-weight: 700; }

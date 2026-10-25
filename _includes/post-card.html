@@ -1,0 +1,27 @@
+{%- comment -%} Usage: {% include post-card.html post=post level=2 %} (level = heading level, default 3) {%- endcomment -%}
+{%- assign p = include.post -%}
+{%- assign hl = include.level | default: 3 -%}
+{%- capture tag_slugs -%}{% for t in p.tags %}{{ t | slugify }} {% endfor %}{%- endcapture -%}
+<article class="card card-link post-card" data-tags="{{ tag_slugs | strip }}">
+  {%- if p.cover %}
+  <img class="post-card-cover" src="{{ p.cover | relative_url }}" alt="" loading="lazy" width="800" height="400">
+  {%- endif %}
+  <div class="post-card-body">
+    <p class="meta">
+      <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%b %-d, %Y" }}</time>
+      <span aria-hidden="true">·</span>
+      <span>{% include reading-time.html content=p.content %}</span>
+    </p>
+    <h{{ hl }} class="post-card-title"><a class="stretched" href="{{ p.url | relative_url }}">{{ p.title }}</a></h{{ hl }}>
+    {%- if p.summary %}
+    <p class="post-card-summary">{{ p.summary }}</p>
+    {%- endif %}
+    {%- if p.tags.size > 0 %}
+    <ul class="chips" aria-label="Tags">
+      {%- for t in p.tags %}
+      <li class="chip">#{{ t }}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+  </div>
+</article>

@@ -1,0 +1,91 @@
+# =============================================================================
+#  SITE-WIDE SETTINGS
+#  Edit the values below to personalise the site. After editing this file,
+#  restart `bundle exec jekyll serve` locally (it is NOT hot-reloaded).
+# =============================================================================
+
+# --- About you ---------------------------------------------------------------
+name: "Your Name"                         # PLACEHOLDER
+role: "Software Engineer"                 # PLACEHOLDER, shown under your name
+tagline: "I build calm, reliable software for messy real-world problems."  # PLACEHOLDER
+location: "Vilnius, Lithuania"            # PLACEHOLDER (optional, leave "" to hide)
+email: "you@example.com"                  # PLACEHOLDER
+github_username: "domantas-tech"          # used for links and the "More on GitHub" section
+linkedin_username: "your-linkedin"        # PLACEHOLDER: the part after linkedin.com/in/
+avatar: "/assets/images/avatar.svg"       # replace with e.g. /assets/images/me.jpg
+
+# Short "About me" paragraph(s) on the home page. Markdown is allowed.
+about: |
+  **Placeholder.** Lorem ipsum dolor sit amet, consectetur adipiscing elit. I'm a
+  software engineer who enjoys turning vague problems into small, well-tested
+  systems. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+  Outside of work: lorem ipsum, long walks, and far too many side projects.
+
+# --- Stats widget on the home page --------------------------------------------
+# "projects" and "posts" are counted automatically. Set the career start year
+# for "years of experience".
+career_start_year: 2018                   # PLACEHOLDER
+
+# --- Status / news banner (top of every page) ---------------------------------
+# mode: "latest_post"  -> shows your newest blog post automatically
+#       "custom"       -> shows `text` and links to `link`
+#       "off"          -> hides the banner
+banner:
+  mode: "custom"
+  label: "Open to work"
+  text: "Available for senior engineering roles from January."   # PLACEHOLDER
+  link: "/#contact"
+  link_text: "Get in touch"
+
+# --- Site metadata (used by jekyll-seo-tag, feed, sitemap) --------------------
+title: "Your Name"                        # browser tab / SEO title
+description: "Personal site, portfolio, blog and CV of Your Name."
+url: "https://domantas-tech.github.io"    # change if you add a custom domain
+baseurl: ""                               # keep empty for a user site
+lang: "en"
+author:
+  name: "Your Name"
+social:
+  name: "Your Name"
+  links:
+    - "https://github.com/domantas-tech"
+    - "https://www.linkedin.com/in/your-linkedin"
+
+# =============================================================================
+#  BUILD SETTINGS. You normally don't need to touch anything below.
+# =============================================================================
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: /blog/:year/:month/:day/:title/
+timezone: Europe/Vilnius
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - README.md
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - node_modules

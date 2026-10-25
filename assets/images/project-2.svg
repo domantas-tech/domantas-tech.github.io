@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Pinecrest CLI placeholder screenshot">
+  <rect width="800" height="500" fill="#0F2724"/>
+  <rect x="24" y="24" width="752" height="476" rx="14" fill="#11211E" stroke="#24504A"/>
+  <circle cx="48" cy="48" r="5" fill="#F2A097"/><circle cx="66" cy="48" r="5" fill="#F2C46B"/><circle cx="84" cy="48" r="5" fill="#4FD1B5"/>
+  <text x="400.0" y="53" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#9BB2AC">Pinecrest CLI</text>
+  <line x1="24" y1="72" x2="776" y2="72" stroke="#24504A"/>
+  <rect x="48" y="96" width="704" height="356" rx="10" fill="#0A1715" stroke="#24504A"/>
+  <text x="70" y="136" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#E4EEEB">$ pinecrest audit --all</text>
+  <text x="70" y="170" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#4FD1B5">✔ scanned 214 resources</text>
+  <text x="70" y="204" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#F2C46B">⚠ 9 idle instances</text>
+  <text x="70" y="238" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#F2C46B">⚠ 3 unattached volumes</text>
+  <text x="70" y="272" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#7ADEC8">→ est. savings  €412/mo</text>
+  <text x="70" y="306" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#E4EEEB">$ _</text>
+</svg>

@@ -1,0 +1,39 @@
+# =============================================================================
+#  PORTFOLIO PROJECTS
+#  One entry per project. Copy a block, paste it, and edit the values.
+#  - featured: true   -> also shown on the home page
+#  - github / demo    -> leave "" to hide that button
+#  - image            -> put the file in /assets/images/ (16:10 ratio looks best)
+# =============================================================================
+
+- name: "Project Atlas"                                  # PLACEHOLDER
+  description: "Placeholder. A dashboard that turns scattered spreadsheets into one live view of team workload. Lorem ipsum dolor sit amet."
+  tech: ["Python", "FastAPI", "PostgreSQL", "Docker"]
+  github: "https://github.com/domantas-tech/project-atlas"
+  demo: "https://example.com"
+  image: "/assets/images/project-1.svg"
+  featured: true
+
+- name: "Pinecrest CLI"                                  # PLACEHOLDER
+  description: "Placeholder. A small command-line tool that audits cloud costs and flags idle resources every night."
+  tech: ["Go", "AWS", "GitHub Actions"]
+  github: "https://github.com/domantas-tech/pinecrest-cli"
+  demo: ""
+  image: "/assets/images/project-2.svg"
+  featured: true
+
+- name: "Northwind Notes"                                # PLACEHOLDER
+  description: "Placeholder. An offline-first notes app with end-to-end encrypted sync. Consectetur adipiscing elit."
+  tech: ["TypeScript", "IndexedDB", "Web Crypto"]
+  github: "https://github.com/domantas-tech/northwind-notes"
+  demo: "https://example.com"
+  image: "/assets/images/project-3.svg"
+  featured: true
+
+- name: "Signal Board"                                   # PLACEHOLDER
+  description: "Placeholder. A tiny status page generator for side projects. Sed do eiusmod tempor incididunt."
+  tech: ["Jekyll", "HTML", "CSS"]
+  github: "https://github.com/domantas-tech/signal-board"
+  demo: ""
+  image: "/assets/images/project-4.svg"
+  featured: false

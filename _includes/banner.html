@@ -1,0 +1,27 @@
+{%- comment -%} Status / news strip. Configure under `banner:` in _config.yml. {%- endcomment -%}
+{%- assign b = site.banner -%}
+{%- if b and b.mode != "off" -%}
+  {%- if b.mode == "latest_post" and site.posts.size > 0 -%}
+    {%- assign latest = site.posts.first -%}
+    {%- assign b_label = "Latest post" -%}
+    {%- assign b_text = latest.title -%}
+    {%- assign b_link = latest.url -%}
+    {%- assign b_link_text = "Read" -%}
+  {%- else -%}
+    {%- assign b_label = b.label -%}
+    {%- assign b_text = b.text -%}
+    {%- assign b_link = b.link -%}
+    {%- assign b_link_text = b.link_text | default: "Details" -%}
+  {%- endif -%}
+  {%- if b_text -%}
+<div class="banner" role="region" aria-label="Site status">
+  <div class="container banner-inner">
+    <span class="banner-label"><span class="dot" aria-hidden="true"></span>{{ b_label }}</span>
+    <span class="banner-text">{{ b_text }}</span>
+    {%- if b_link %}
+    <a class="banner-link" href="{{ b_link | relative_url }}">{{ b_link_text }} <span aria-hidden="true">→</span></a>
+    {%- endif %}
+  </div>
+</div>
+  {%- endif -%}
+{%- endif -%}

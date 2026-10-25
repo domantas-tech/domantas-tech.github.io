@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-label="Overview placeholder screenshot">
+  <rect width="1200" height="750" fill="#0F2724"/>
+  <rect x="24" y="24" width="1152" height="726" rx="14" fill="#11211E" stroke="#24504A"/>
+  <circle cx="48" cy="48" r="5" fill="#F2A097"/><circle cx="66" cy="48" r="5" fill="#F2C46B"/><circle cx="84" cy="48" r="5" fill="#4FD1B5"/>
+  <text x="600.0" y="53" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" fill="#9BB2AC">Overview</text>
+  <line x1="24" y1="72" x2="1176" y2="72" stroke="#24504A"/>
+  <rect x="56" y="104" width="260" height="84" rx="10" fill="#172B27" stroke="#24504A"/>
+  <text x="72" y="150" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="800" fill="#E4EEEB">8</text>
+  <text x="72" y="172" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#9BB2AC">active</text>
+  <rect x="332" y="104" width="260" height="84" rx="10" fill="#172B27" stroke="#24504A"/>
+  <text x="348" y="150" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="800" fill="#E4EEEB">3</text>
+  <text x="348" y="172" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#9BB2AC">this week</text>
+  <rect x="608" y="104" width="260" height="84" rx="10" fill="#172B27" stroke="#24504A"/>
+  <text x="624" y="150" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="800" fill="#E4EEEB">1</text>
+  <text x="624" y="172" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#9BB2AC">offer</text>
+  <rect x="884" y="104" width="260" height="84" rx="10" fill="#172B27" stroke="#24504A"/>
+  <text x="900" y="150" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="32" font-weight="800" fill="#E4EEEB">94%</text>
+  <text x="900" y="172" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" fill="#9BB2AC">on time</text>
+  <rect x="60.0" y="552.0" width="73.6" height="138.0" rx="4" fill="#4FD1B5" opacity="0.69"/>
+  <rect x="141.6" y="483.0" width="73.6" height="207.0" rx="4" fill="#4FD1B5" opacity="0.75"/>
+  <rect x="223.2" y="506.0" width="73.6" height="184.0" rx="4" fill="#4FD1B5" opacity="0.73"/>
+  <rect x="304.8" y="404.8" width="73.6" height="285.2" rx="4" fill="#4FD1B5" opacity="0.83"/>
+  <rect x="386.4" y="423.2" width="73.6" height="266.8" rx="4" fill="#4FD1B5" opacity="0.81"/>
+  <rect x="468.0" y="322.0" width="73.6" height="368.0" rx="4" fill="#4FD1B5" opacity="0.91"/>
+  <rect x="549.6" y="368.0" width="73.6" height="322.0" rx="4" fill="#4FD1B5" opacity="0.86"/>
+  <rect x="631.2" y="276.0" width="73.6" height="414.0" rx="4" fill="#4FD1B5" opacity="0.96"/>
+  <rect x="732.8" y="230" width="411.20000000000005" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="744.8" y="242" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="765.8" y="258" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#7FE0A8">5/5</text>
+  <rect x="800.8" y="243" width="185" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="800.8" y="257" width="123" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="732.8" y="288" width="411.20000000000005" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="744.8" y="300" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="765.8" y="316" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#4FD1B5">4/5</text>
+  <rect x="800.8" y="301" width="185" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="800.8" y="315" width="123" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="732.8" y="346" width="411.20000000000005" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="744.8" y="358" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="765.8" y="374" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F2C46B">3/5</text>
+  <rect x="800.8" y="359" width="185" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="800.8" y="373" width="123" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="732.8" y="404" width="411.20000000000005" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="744.8" y="416" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="765.8" y="432" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#7FE0A8">5/5</text>
+  <rect x="800.8" y="417" width="185" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="800.8" y="431" width="123" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="732.8" y="462" width="411.20000000000005" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="744.8" y="474" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="765.8" y="490" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#4FD1B5">4/5</text>
+  <rect x="800.8" y="475" width="185" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="800.8" y="489" width="123" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="732.8" y="520" width="411.20000000000005" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="744.8" y="532" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="765.8" y="548" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#F2C46B">3/5</text>
+  <rect x="800.8" y="533" width="185" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="800.8" y="547" width="123" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+  <rect x="732.8" y="578" width="411.20000000000005" height="46" rx="10" fill="#172B27" stroke="#24504A"/>
+  <rect x="744.8" y="590" width="42" height="22" rx="11" fill="#163A35"/>
+  <text x="765.8" y="606" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#7FE0A8">5/5</text>
+  <rect x="800.8" y="591" width="185" height="8" rx="4" fill="#E4EEEB" opacity=".8"/>
+  <rect x="800.8" y="605" width="123" height="6" rx="3" fill="#9BB2AC" opacity=".6"/>
+</svg>

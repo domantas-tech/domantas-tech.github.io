@@ -1,0 +1,84 @@
+# =============================================================================
+#  CV / ACCOMPLISHMENTS DATA
+#  Everything on the /cv/ page comes from this file. Edit, save, done.
+#  Keep the indentation (2 spaces). Lists start with "- ".
+# =============================================================================
+
+# One-paragraph professional summary at the top of the CV page.
+summary: >
+  Placeholder. Software engineer with N years of experience building backend
+  services and internal tools. Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+
+# --- Experience (newest first) -----------------------------------------------
+experience:
+  - role: "Senior Software Engineer"                     # PLACEHOLDER
+    company: "Atlas Remit"
+    location: "Remote"
+    start: "2022"
+    end: "Present"
+    highlights:
+      - "Placeholder. Led the rewrite of the payments reconciliation service, cutting processing time by 60%."
+      - "Mentored four engineers; introduced design reviews and on-call runbooks."
+      - "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+  - role: "Software Engineer"                            # PLACEHOLDER
+    company: "Pinecrest Bank"
+    location: "Vilnius, Lithuania"
+    start: "2019"
+    end: "2022"
+    highlights:
+      - "Placeholder. Built the card-issuing API used by 3 partner apps."
+      - "Reduced CI pipeline time from 25 to 8 minutes."
+
+  - role: "Junior Developer"                             # PLACEHOLDER
+    company: "Northwind Insure"
+    location: "Kaunas, Lithuania"
+    start: "2018"
+    end: "2019"
+    highlights:
+      - "Placeholder. Automated claims intake forms, saving roughly 20 hours a week."
+
+# --- Education ----------------------------------------------------------------
+education:
+  - degree: "BSc Computer Science"                       # PLACEHOLDER
+    school: "Example University"
+    start: "2014"
+    end: "2018"
+    details: "Placeholder. Thesis on lorem ipsum. Graduated with honours."
+
+  - degree: "Exchange semester"                          # PLACEHOLDER
+    school: "Another University"
+    start: "2017"
+    end: "2017"
+    details: ""
+
+# --- Skills (grouped; each group becomes a row of chips) ----------------------
+skills:
+  - group: "Languages"
+    items: ["Python", "Go", "TypeScript", "SQL"]
+  - group: "Backend & data"
+    items: ["FastAPI", "PostgreSQL", "Redis", "Kafka"]
+  - group: "Cloud & tooling"
+    items: ["AWS", "Docker", "Terraform", "GitHub Actions"]
+  - group: "Practices"
+    items: ["System design", "Code review", "Mentoring", "Technical writing"]
+
+# --- Accomplishments / awards / certifications --------------------------------
+accomplishments:
+  - title: "AWS Certified Solutions Architect – Associate"   # PLACEHOLDER
+    year: "2024"
+    description: "Placeholder certification."
+  - title: "Hackathon winner, Example Fintech Hack"           # PLACEHOLDER
+    year: "2023"
+    description: "Built a fraud-signal prototype in 48 hours. Lorem ipsum."
+  - title: "Conference talk: \"Boring systems that last\""    # PLACEHOLDER
+    year: "2022"
+    description: "Placeholder talk at Example Dev Days."
+
+# --- Languages spoken (optional; delete the block to hide) --------------------
+languages:
+  - name: "English"
+    level: "Fluent"
+  - name: "Lithuanian"
+    level: "Native"

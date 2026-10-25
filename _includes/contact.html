@@ -1,0 +1,35 @@
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2 class="section-title" id="contact-title">Let's talk</h2>
+      <p class="section-sub">The fastest way to reach me is email. I usually reply within a day or two.</p>
+    </div>
+    <ul class="contact-grid">
+      {%- if site.email %}
+      <li>
+        <a class="card card-link contact-card" href="mailto:{{ site.email }}">
+          <span class="contact-icon">{% include icon.html name="mail" %}</span>
+          <span><strong>Email</strong><span class="contact-value">{{ site.email }}</span></span>
+        </a>
+      </li>
+      {%- endif %}
+      {%- if site.github_username %}
+      <li>
+        <a class="card card-link contact-card" href="https://github.com/{{ site.github_username }}" rel="me">
+          <span class="contact-icon">{% include icon.html name="github" %}</span>
+          <span><strong>GitHub</strong><span class="contact-value">@{{ site.github_username }}</span></span>
+        </a>
+      </li>
+      {%- endif %}
+      {%- if site.linkedin_username %}
+      <li>
+        <a class="card card-link contact-card" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" rel="me">
+          <span class="contact-icon">{% include icon.html name="linkedin" %}</span>
+          <span><strong>LinkedIn</strong><span class="contact-value">in/{{ site.linkedin_username }}</span></span>
+        </a>
+      </li>
+      {%- endif %}
+    </ul>
+  </div>
+</section>

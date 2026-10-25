@@ -1,0 +1,27 @@
+{%- comment -%} Usage: {% include project-card.html project=project level=2 %} (level = heading level, default 3) {%- endcomment -%}
+{%- assign pr = include.project -%}
+{%- assign hl = include.level | default: 3 -%}
+<article class="card project-card">
+  {%- if pr.image %}
+  <img class="project-image" src="{{ pr.image | relative_url }}" alt="Screenshot of {{ pr.name }}" loading="lazy" width="800" height="500">
+  {%- endif %}
+  <div class="project-body">
+    <h{{ hl }} class="project-title">{{ pr.name }}</h{{ hl }}>
+    <p class="project-desc">{{ pr.description }}</p>
+    {%- if pr.tech.size > 0 %}
+    <ul class="chips" aria-label="Tech stack">
+      {%- for t in pr.tech %}
+      <li class="chip">{{ t }}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+    <div class="project-actions">
+      {%- if pr.github and pr.github != "" %}
+      <a class="btn btn-secondary btn-sm" href="{{ pr.github }}" aria-label="{{ pr.name }} source code on GitHub">{% include icon.html name="github" %} Code</a>
+      {%- endif %}
+      {%- if pr.demo and pr.demo != "" %}
+      <a class="btn btn-primary btn-sm" href="{{ pr.demo }}" aria-label="{{ pr.name }} live demo">{% include icon.html name="external" %} Live demo</a>
+      {%- endif %}
+    </div>
+  </div>
+</article>

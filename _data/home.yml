@@ -1,0 +1,54 @@
+# =============================================================================
+#  HOME PAGE CONTENT
+#  Text for the hero, the "strengths" widget, the "What I do" list and the
+#  showcase gallery. Your name, tagline and about text live in _config.yml.
+# =============================================================================
+
+# Big two-line hero headline. Line 2 is shown in the accent color.
+hero:
+  line1: "Hi, I'm Your Name."                       # PLACEHOLDER
+  line2: "I ship software that lasts."              # PLACEHOLDER
+  eyebrow: "Software Engineer · Open to new roles"  # small text above the headline
+
+# Dashboard-style card in the hero: items with a score badge (1-5).
+strengths:
+  title: "Core strengths · self-rated"
+  items:
+    - score: 5
+      name: "Backend & APIs"                        # PLACEHOLDER
+      detail: "Python · Go · PostgreSQL"
+    - score: 4
+      name: "Cloud infrastructure"                  # PLACEHOLDER
+      detail: "AWS · Terraform · Docker"
+    - score: 3
+      name: "Frontend"                              # PLACEHOLDER
+      detail: "TypeScript · HTML · CSS"
+
+# Compact feature list: bold short title + one line.
+features:
+  - title: "Backend systems"                        # PLACEHOLDER
+    text: "Placeholder. APIs and data pipelines that stay boring in production."
+  - title: "Developer tooling"
+    text: "Placeholder. CLIs, CI pipelines and automation that save hours every week."
+  - title: "Technical writing"
+    text: "Placeholder. Clear docs, design reviews and posts on this blog."
+  - title: "Mentoring"
+    text: "Placeholder. Helping engineers grow through pairing and thoughtful review."
+
+# Screenshot / showcase gallery with captions.
+showcase:
+  title: "A look inside my work"
+  subtitle: "Placeholder screenshots. Replace them with real ones in /assets/images/."
+  items:
+    - image: "/assets/images/showcase-1.svg"
+      alt: "Dashboard screenshot showing workload charts"
+      title: "Project Atlas · Overview"
+      caption: "Placeholder. Today's workload, overdue items and approvals at a glance."
+    - image: "/assets/images/showcase-2.svg"
+      alt: "List view ranking items by score"
+      title: "Pinecrest CLI · Report"
+      caption: "Placeholder. Nightly cost report ranked by potential savings."
+    - image: "/assets/images/showcase-3.svg"
+      alt: "Kanban board with three columns"
+      title: "Northwind Notes · Board"
+      caption: "Placeholder. Drag notes between stages; syncs offline."
