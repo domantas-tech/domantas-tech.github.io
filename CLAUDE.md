@@ -35,8 +35,8 @@ document it in README.md §3.
   with reading time and prev/next.
 - `_includes/`: `head`, `header`, `footer`, `banner`, `stats`, `project-card` and `post-card` (both take
   `level=` for heading level), `reading-time`, `contact`, `icon` (inline SVG by `name=`).
-- `assets/css/main.css`: **theme tokens at the top** (light in `:root`; dark duplicated in the
-  `prefers-color-scheme` block and `[data-theme="dark"]`, both `screen`-only, and **must stay in sync**),
+- `assets/css/main.css`: **theme tokens at the top**. **Dark is the default** (`@media screen { :root:not([data-theme="light"]) }`),
+  light lives in `:root` (used for `data-theme="light"` and print). System preference is intentionally ignored (owner's choice),
   then base/layout/components/pages/print. `syntax.css` holds the Rouge token colors.
 - `assets/js/main.js`: theme toggle (localStorage key `theme`, always in try/catch), mobile nav, blog tag
   filter (`?tag=slug`), print button. The inline script in `head.html` applies the saved theme before paint.

@@ -4,7 +4,7 @@ A personal website (home, portfolio, blog, CV and contact) built with **Jekyll**
 **https://domantas-tech.github.io**.
 
 - No build step, no npm, no GitHub Actions. GitHub Pages builds it for you on every push.
-- Plain HTML, CSS and a little vanilla JS. Light and dark mode, responsive, keyboard accessible.
+- Plain HTML, CSS and a little vanilla JS. Dark theme by default (with a light-mode toggle), responsive, keyboard accessible.
 - **All content lives in data files and Markdown**, so you never need to touch the HTML to update it.
 
 ```
@@ -157,17 +157,16 @@ Tips: use `.jpg` or `.webp` for photos and `.png`/`.svg` for screenshots and gra
 
 ### 3.7 Change the theme colors
 All colors are CSS variables at the **top of `assets/css/main.css`** (section "1. THEME TOKENS"):
-- `:root { … }` holds the **light** theme.
-- The **dark** theme is defined twice, under `@media screen and (prefers-color-scheme: dark)` and
-  `:root[data-theme="dark"]`. Keep those two blocks identical.
+- The **dark** theme (the default) is the block under `@media screen { :root:not([data-theme="light"]) { … } }`.
+- `:root { … }` holds the **light** theme, used when a visitor clicks the toggle and when printing.
 - `--brand` is the deep teal (`#0F2724`). `--accent` is used for links and highlights.
   `--btn-bg` is the primary button color.
 
 Code-highlighting colors are in `assets/css/syntax.css`. If you change `--brand`, also update
 `<meta name="theme-color">` in `_includes/head.html`.
 
-The theme toggle (moon/sun icon) follows the visitor's system setting until they click it, and then
-remembers their choice.
+Everyone sees the dark theme first. The toggle (sun/moon icon) switches to light mode, and the browser
+remembers that choice for the next visit.
 
 ### 3.8 Edit the status banner
 In `_config.yml`:

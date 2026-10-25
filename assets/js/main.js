@@ -4,13 +4,9 @@
 
   var root = document.documentElement;
 
-  /* ---------- Theme toggle ---------- */
-  var mql = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
-
+  /* ---------- Theme toggle (dark by default, "light" is remembered) ---------- */
   function currentTheme() {
-    var set = root.getAttribute("data-theme");
-    if (set === "light" || set === "dark") return set;
-    return mql && mql.matches ? "dark" : "light";
+    return root.getAttribute("data-theme") === "light" ? "light" : "dark";
   }
 
   function updateToggleLabel(btn) {
@@ -28,9 +24,6 @@
       try { localStorage.setItem("theme", next); } catch (e) { /* storage blocked: still works for this page view */ }
       updateToggleLabel(themeBtn);
     });
-    if (mql && mql.addEventListener) {
-      mql.addEventListener("change", function () { updateToggleLabel(themeBtn); });
-    }
   }
 
   /* ---------- Mobile navigation ---------- */

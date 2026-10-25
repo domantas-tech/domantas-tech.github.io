@@ -14,7 +14,7 @@
   --brand: #0F2724;          /* deep teal, also the browser theme-color */
   --brand-ink: #E4EEEB;      /* text on brand backgrounds */
 
-  /* Light theme */
+  /* Light theme (used when "light" is picked with the toggle, and for print) */
   --bg: #F5F8F7;
   --bg-alt: #ECF2F0;
   --surface: #FFFFFF;
@@ -57,8 +57,9 @@
   --ease: cubic-bezier(.2, .7, .2, 1);
 }
 
-/* Dark theme: follows the system unless the visitor picked "light" … */
-@media screen and (prefers-color-scheme: dark) {
+/* Dark theme: the DEFAULT on screen. Applies unless the visitor picked "light"
+   with the toggle. (Print always uses the light values from :root above.) */
+@media screen {
   :root:not([data-theme="light"]) {
     --bg: #0A1715; --bg-alt: #0D1D1A; --surface: #11211E; --surface-2: #172B27;
     --text: #E4EEEB; --muted: #9BB2AC; --border: #1F3631;
@@ -73,23 +74,6 @@
     --shadow-md: 0 10px 28px rgba(0, 0, 0, .45);
     color-scheme: dark;
   }
-}
-/* … or explicitly picked "dark" with the toggle (keep in sync with above). */
-@media screen {
-:root[data-theme="dark"] {
-  --bg: #0A1715; --bg-alt: #0D1D1A; --surface: #11211E; --surface-2: #172B27;
-  --text: #E4EEEB; --muted: #9BB2AC; --border: #1F3631;
-  --accent: #4FD1B5; --accent-hover: #7ADEC8; --accent-soft: #143A33;
-  --btn-bg: #4FD1B5; --btn-text: #0A1715; --btn-hover: #7ADEC8; --focus: #4FD1B5;
-  --score-5-bg: #12382A; --score-5-fg: #7FE0A8;
-  --score-4-bg: #123A35; --score-4-fg: #6FD9C4;
-  --score-3-bg: #3A2C12; --score-3-fg: #F2C46B;
-  --score-low-bg: #3D1C19; --score-low-fg: #F2A097;
-  --code-bg: #0D1D1A; --code-text: #D5E4E0;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .35);
-  --shadow-md: 0 10px 28px rgba(0, 0, 0, .45);
-  color-scheme: dark;
-}
 }
 :root[data-theme="light"] { color-scheme: light; }
 
@@ -200,14 +184,10 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2.5rem 0; }
 .icon-btn:hover { background: var(--surface-2); border-color: var(--border); }
 .icon-btn > span { display: inline-grid; }
 
-/* Theme toggle: show the moon in light mode, the sun in dark mode */
-.theme-toggle .icon-sun { display: none; }
-:root[data-theme="dark"] .theme-toggle .icon-sun { display: inline-grid; }
-:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: inline-grid; }
-  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
-}
+/* Theme toggle: sun in dark mode (click for light), moon in light mode */
+.theme-toggle .icon-moon { display: none; }
+:root[data-theme="light"] .theme-toggle .icon-moon { display: inline-grid; }
+:root[data-theme="light"] .theme-toggle .icon-sun { display: none; }
 html:not(.js) .theme-toggle { display: none; }
 
 /* Navigation: collapsible on mobile (only when JS is available) */

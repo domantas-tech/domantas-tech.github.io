@@ -14,19 +14,13 @@
   --hl-del-bg: #FBE4E1;
   --hl-ins-bg: #DDF3E6;
 }
-@media screen and (prefers-color-scheme: dark) {
+/* Dark is the default on screen (see main.css). */
+@media screen {
   :root:not([data-theme="light"]) {
     --hl-comment: #7F9893; --hl-keyword: #F49AC9; --hl-string: #8BE0A9; --hl-number: #F5B36B;
     --hl-func: #8FBFFF; --hl-type: #6FD9C4; --hl-builtin: #C6A7FF; --hl-attr: #F2C46B;
     --hl-del-bg: #3D1C19; --hl-ins-bg: #12382A;
   }
-}
-@media screen {
-:root[data-theme="dark"] {
-  --hl-comment: #7F9893; --hl-keyword: #F49AC9; --hl-string: #8BE0A9; --hl-number: #F5B36B;
-  --hl-func: #8FBFFF; --hl-type: #6FD9C4; --hl-builtin: #C6A7FF; --hl-attr: #F2C46B;
-  --hl-del-bg: #3D1C19; --hl-ins-bg: #12382A;
-}
 }
 
 .highlight .c, .highlight .c1, .highlight .cm, .highlight .cs, .highlight .cp, .highlight .ch, .highlight .cd { color: var(--hl-comment); font-style: italic; }
