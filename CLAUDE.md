@@ -26,7 +26,7 @@ Personal career website for GitHub user **domantas-tech**, deployed as a GitHub 
 | Images | `assets/images/` |
 
 Never hard-code personal content in templates; add a field to the relevant data file instead and
-document it in README.md §3.
+document it in GUIDE.md §3 (local, gitignored editing guide).
 
 ## Code map
 - `_layouts/default.html`: shell (banner, header, main, footer, scripts). Pages can add scripts with
