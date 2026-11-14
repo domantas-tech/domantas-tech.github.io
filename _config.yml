@@ -82,6 +82,7 @@ defaults:
 
 exclude:
   - README.md
+  - GUIDE.md
   - CLAUDE.md
   - Gemfile
   - Gemfile.lock
